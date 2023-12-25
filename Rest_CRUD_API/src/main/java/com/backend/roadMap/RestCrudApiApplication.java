@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RoadMapApplication {
+public class RestCrudApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RoadMapApplication.class, args);
+		SpringApplication.run(RestCrudApiApplication.class, args);
 	}
 
 }
