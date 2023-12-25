@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="roadMap" />
+        <module name="Rest_CRUD_API" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Rest_CRUD_API" target="17" />
+      <module name="roadMap" target="17" />
+      <module name="roadmap" target="20" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
