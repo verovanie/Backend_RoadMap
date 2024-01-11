@@ -3,10 +3,9 @@ package com.backend.roadMap.RestController;
 
 import com.backend.roadMap.entity.Student;
 import jakarta.annotation.PostConstruct;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +39,14 @@ public class StudentRestController {
     @GetMapping("/student/{studentID}")
     public Student getStudent(@PathVariable int studentID){
 
+        //Check the studentID against the list size
+        if((studentID >= theStudent.size() )|| (studentID < 0)){
+            throw new StudentNotFoundException("Student not found - "+ studentID);
+        }
+
         return theStudent.get(studentID);
     }
 
 }
+
+
