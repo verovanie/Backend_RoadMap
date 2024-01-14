@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.backend</groupId>
-	<artifactId>Rest_CRUD_API</artifactId>
+	<artifactId>Rest_CRUD_List</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Rest_CRUD_API</name>
 	<description>Backend_Dev_RoadMap</description>
